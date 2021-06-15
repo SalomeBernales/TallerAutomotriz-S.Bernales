@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+/* header */
+ul {
+    list-style-type: none;
+    background-color: #9DC5D2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 80px;
+    align-items: center;
+    justify-content:center;
+}
+
+li {
+    width: 20%;
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+iframe {
+    position: relative;
+    left: 270px;
+}
+
+h1{
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.fotoBanner1 {
+    position: relative;
+    left: 210px;
+}
+
+/* main */
+
+h2{
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 29px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+p{
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: #ABE0F1;
+    justify-content: center;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #C4C4C4;
+    background-image: linear-gradient(to bottom, rgb(202, 217, 230) , rgb(86, 86, 143));
+}
+
+/* formularios */
+
+.textoformulario {
+    color: black;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: justify;
+}
+
+fieldset {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Grilla en main de index */
+
+#grillaMain {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 600px 200px;
+    grid-template-areas: "section1"
+                         "section2"
+                         "section3";
+    justify-items: center;
+    }
+
+    #sectionUno {
+        grid-area: section1;
+        width: 60%;
+        justify-self: center;
+        align-self: flex-end;
+    }
+    
+    #sectionDos {
+        grid-area: section2;
+        width: 80%;
+        justify-self: center;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 20% 30% 10% 40%;
+            grid-template-areas: "servi servi servi servi"
+                                 "ima1 ima2 ima3 ima4"
+                                 "boton1 boton2 boton3 boton4"
+                                 "textito1 textito2 textito3 textito4";
+    }
+
+    #servi {
+        grid-area: servi;
+        align-self: center;
+    }
+
+    #ima1 {
+        grid-area: ima1;
+        align-self: center;
+    }
+
+    #ima2 {
+        grid-area: ima2;
+        align-self: center;
+    }
+
+    #ima3 {
+        grid-area: ima3;
+        align-self: center;
+    }
+
+    #ima4 {
+        grid-area: ima4;
+        align-self: center;
+    }
+
+    #boton1 {
+        grid-area: boton1;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #boton2 {
+        grid-area: boton2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #boton3 {
+        grid-area: boton3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #boton4 {
+        grid-area: boton4;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #textito1 {
+        grid-area: textito1;
+        align-self: center;
+        justify-self: center;
+        height: 100%;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    #textito2 {
+        grid-area: textito2;
+        align-self: center;
+        justify-self: center;
+        height: 100%;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    #textito3 {
+        grid-area: textito3;
+        align-self: center;
+        justify-self: center;
+        height: 100%;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    #textito4 {
+        grid-area: textito4;
+        align-self: center;
+        justify-self: center;
+        height: 100%;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    #sectionTres {
+        width: 60%;
+        justify-self: center;
+        grid-area: section3;
+    }
+
+/* Grilla en footer */
+
+#grillaFooter {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 150px 250px;
+    grid-template-areas: "dire correo fono "
+                          "mapa mapa mapa";
+    justify-items: center;
+    }
+
+    #dire {
+        grid-area: dire;
+        align-self: center;
+    }
+
+    #correo {
+        grid-area: correo;
+        align-self: center;
+    }
+
+    #fono {
+        grid-area: fono;
+        align-self: center;
+    }
+
+    #mapa {
+        grid-area: mapa;
+        align-self: center;
+        height: 90%;
+        justify-self: center;
+        position: relative;
+        left: 495px;
+        width: 1200px;
+    }
+
+    /* Grilla en main de servicios */
+
+#grillaServicios {
+    display: grid;
+    width: 100%;
+    justify-self: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas: "titulo titulo"
+                         "fotoservi1 servi1"
+                         "servi2 fotoservi2"
+                         "fotoservi3 servi3"
+                         "servi4 fotoservi4";
+    justify-items: center;
+    justify-content:center;
+    }
+
+    #titulo {
+        grid-area: titulo;
+        align-self: center;
+    }
+
+    #servi1 {
+        grid-area: servi1;
+        align-self: center;
+        height: 100%;
+    }
+
+    #fotoservi1 {
+        grid-area: fotoservi1;
+        align-self: center;
+        height: 80%;
+        justify-self: center;
+    }
+
+    #servi2 {
+        grid-area: servi2;
+        align-self: center;
+    }
+
+    #fotoservi2 {
+        grid-area: fotoservi2;
+        align-self: center;
+        height: 100%;
+    }
+
+    #servi3 {
+        grid-area: servi3;
+        align-self: center;
+    }
+
+    #fotoservi3 {
+        grid-area: fotoservi3;
+        align-self: center;
+        height: 100%;
+    }
+
+    #servi4 {
+        grid-area: servi4;
+        align-self: center;
+    }
+
+    #fotoservi4 {
+        grid-area: fotoservi4;
+        align-self: center;
+        height: 100%;
+    }
+
+      /* Grilla en main de quienes somos */
+
+#grillaQuienesSomos {
+    display: grid;
+    width: 100%;
+    justify-self: center;
+    grid-template-columns: 37% 37%;
+    grid-template-rows: 100px 300px 300px 450px;
+    grid-template-areas: "tituloQ tituloQ"
+                         "fotosomos1 textsomos1"
+                         "textsomos2 fotosomos2"
+                         "fotosomos3 fotosomos3";
+    justify-items: center;
+    justify-content: center;
+    }
+
+    #tituloQ {
+        grid-area: tituloQ;
+        align-self: center;
+    }
+
+    #fotosomos1 {
+        grid-area: fotosomos1;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+    }
+    #textsomos1 {
+        grid-area: textsomos1;
+        align-self: center;
+    }
+    #textsomos2 {
+        grid-area: textsomos2;
+        align-self: center;
+    }
+    #fotosomos2 {
+        grid-area: fotosomos2;
+        align-self: center;
+        height: 100%;
+    }
+    #fotosomos3 {
+        grid-area: fotosomos3;
+        align-self: center;
+        height: 80%;
+    }
+
+    
+    /* Aplicación de hover en menú */
+a:hover {
+    color: rgb(39, 31, 107);
+    font-size: larger;
+
+}
