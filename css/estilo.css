@@ -101,6 +101,11 @@ fieldset {
     margin-right: 25px;
 }
 
+#Formulario {
+width: 50%;
+}
+
+
 /* Grilla en main de index */
 
 #grillaMain {

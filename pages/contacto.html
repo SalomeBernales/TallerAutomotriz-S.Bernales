@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    <title>Web Taller automotríz</title>
@@ -35,7 +36,7 @@
         <br>
         <p>Este párrafo describe la manera de contactarse</p>
         <br>
-
+        <!--
         <h2>FORMULARIO DE CONTACTO</h2>
         <br>
         <form action="" method="GET">
@@ -62,6 +63,35 @@
                 <input type="Reset"value="RESETEAR">
             </fieldset>
         </form>
+        -->
+        <h2>FORMULARIO DE CONTACTO</h2>
+        <br>
+    <!-- inicio formulario BS-->
+    <div class="container">
+        <form class="mx-auto" id="Formulario">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">NOMBRE</label>
+              </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">EMAIL</label>
+              </div>
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">TELÉFONO</label>
+              </div>
+              <br>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">CONSULTA</label>
+              </div>
+              <br>
+            <button type="submit" class="btn btn-primary">ENVIAR</button>
+          </form>
+    </div>
+      <!-- fin formulario BS-->
+
     <br>
     <br>
     <br>
@@ -103,6 +133,6 @@
     </footer>
 
 
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
 </body>
 </html>
