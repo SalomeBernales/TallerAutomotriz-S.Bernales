@@ -4,8 +4,70 @@ li {
   li a {
     color: red; }
 
-h2 {
-  color: #000008; }
+p, h2, h3 {
+  color: #000008;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  line-height: 1.6;
+  text-decoration: none; }
 
-section p {
-  color: #f71111; }
+h2 {
+  font-size: 29px; }
+
+h3 {
+  font-size: 25px; }
+
+#boton1 {
+  background-color: yellow;
+  width: 60px;
+  height: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border: 1px solid white;
+  grid-area: boton1;
+  align-self: center;
+  justify-self: center; }
+
+#boton2 {
+  background-color: green;
+  width: 80px;
+  height: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border: 1px solid white;
+  grid-area: boton2;
+  align-self: center;
+  justify-self: center; }
+
+#boton3 {
+  background-color: red;
+  width: 40px;
+  height: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border: 1px solid white;
+  grid-area: boton3;
+  align-self: center;
+  justify-self: center; }
+
+#boton4 {
+  background-color: orange;
+  width: 50px;
+  height: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border: 1px solid white;
+  grid-area: boton4;
+  align-self: center;
+  justify-self: center; }

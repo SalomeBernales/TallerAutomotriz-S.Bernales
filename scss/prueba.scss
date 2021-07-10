@@ -10,13 +10,67 @@ li {
 }
 
 
-h2 {
-    color: $colorTitulo;
+// APLICACION DE EXTEND
+
+p{
+    color:$colorTitulo;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.6;
+    text-decoration: none;
 }
 
-section {
+h2{
+    @extend p;
+    font-size: 29px;
+}
 
-    p {
-        color: rgb(247, 17, 17);
-    }
+h3 {
+    @extend p;
+    font-size: 25px;
+}
+
+// APLICACIÓN DE MIXIN
+
+@mixin botones($ancho, $alto, $colorFondo){
+    background-color: $colorFondo;
+    width: $ancho;
+    height: $alto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+
+#boton1 {
+    @include botones (60px,15px,yellow);
+    grid-area: boton1;
+    align-self: center;
+    justify-self: center;
+}
+
+#boton2 {
+    @include botones (80px,20px, green);
+    grid-area: boton2;
+    align-self: center;
+    justify-self: center;
+}
+
+#boton3 {
+    @include botones (40px,12px,  red);
+    grid-area: boton3;
+    align-self: center;
+    justify-self: center;
+}
+
+#boton4 {
+    @include botones (50px,15px, orange);
+    grid-area: boton4;
+    align-self: center;
+    justify-self: center;
 }
