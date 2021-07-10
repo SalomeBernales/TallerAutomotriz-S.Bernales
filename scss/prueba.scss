@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+
+li {
+    width: 20%;
+    text-align: center;
+    a {
+        color:$colorNav;
+    }
+}
+
+
+h2 {
+    color: $colorTitulo;
+}
+
+section {
+
+    p {
+        color: rgb(247, 17, 17);
+    }
+}
