@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Taller automotríz</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <!-- usar SASS
     <link rel="stylesheet" href="css/pruebacss.css">
+    -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    <title>Web Taller automotríz</title>
 </head>
 <body>
-    <header id="HeaderIndex">
+    <header class="HeaderIndex">
+        <div id="listaHeader">
+            <div id="logoUbi">
+                <img src="img/logoUbi.png" alt="Ubicación" width="60%">
+            </div>
+            <p id="ubi">Rodrigo de Araya 342, Ñuñoa</p>
+            <div id="logoWasap">
+                <img src="img/logoWasap.png" alt="Wasap" width="60%">
+            </div>
+            <p id="wasap">+56 9 88888888</p>
+            <img id="logoMail" src="img/logoMail.png" alt="Email" width="60%">
+            <p id="mail">correodetaller@gmail.com</p>
+        </div>
+        
         <nav>
             <ul>
                 <li><a href="index.html"><b>HOME</b></a> </li>
@@ -23,8 +38,12 @@
         </nav>
         <br>
 
-         <a href="pages/contacto.html"><input type="button" value="COTIZAR"></a>
-        
+        <a id="boton" href="pages/contacto.html">COTIZAR</a>
+
+        <!-- Botón original posiblemente borrable
+        <a href="pages/contacto.html"><input type="button" value="COTIZAR"></a>
+        -->
+
     </header>
 
     <main id="grillaMain">
